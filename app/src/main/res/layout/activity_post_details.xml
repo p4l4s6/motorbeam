@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text=" Post Title"
+                android:textColor="#d70505"/>
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@android:drawable/stat_notify_error"
+                android:scaleType="fitCenter"/>
+
+            <WebView
+                android:id="@+id/postDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </WebView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
